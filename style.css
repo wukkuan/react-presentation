@@ -1,0 +1,11 @@
+@keyframes fade-in-delayed {
+  from { opacity: 0; }
+  25% { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.global-loader__loading {
+  /* Start fading in the loading indicator if loading indicator is still
+   * displayed after 0.5s have passed. */
+  animation: fade-in-delayed 2s;
+}

@@ -1,0 +1,7 @@
+{
+  "esnext": true,
+  "undef": true,
+  "browser": true,
+  "laxbreak": true,
+  "predef": ["React"]
+}
