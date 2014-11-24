@@ -1,12 +1,13 @@
 /** @jsx React.DOM */
 
+var React = require('react/addons');
+
 var App = React.createClass({
   render() {
     return (
-      <div>App</div>
+      <div>Hello, React</div>
     );
   }
 });
 
-React.render(<App/>, document.body);
-
+module.exports = App;

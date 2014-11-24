@@ -11,3 +11,9 @@
 
 # OS or Editor folders
 .DS_Store
+
+# Node
+node_modules/
+
+# Webpack
+build/

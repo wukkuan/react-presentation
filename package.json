@@ -1,0 +1,23 @@
+{
+  "name": "react-presentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "webpack-dev-server -d --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "webpack -p"
+  },
+  "author": "William Blasko <williamblasko@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "jsx-loader": "0.12.2",
+    "raw-loader": "0.5.1",
+    "react": "0.12.1",
+    "style-loader": "0.8.2",
+    "webpack": "^1.4.13"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.6.6"
+  }
+}
