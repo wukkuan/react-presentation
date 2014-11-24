@@ -1,0 +1,17 @@
+.slides__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  outline: none;
+  padding: 20px;
+
+  transition: opacity 0.5s;
+}
+
+.slides__wrapper.blurred {
+  opacity: 0.9;
+}
+

@@ -1,0 +1,18 @@
+.text-slide__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 100%;
+}
+
+.text-slide__text {
+  font-size: 100px;
+  text-align: center;
+}
+
+.text-slide__sub-text {
+  font-size: 50px;
+  text-align: center;
+}
