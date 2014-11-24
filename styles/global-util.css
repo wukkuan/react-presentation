@@ -14,6 +14,10 @@ html {
   to { opacity: 1; }
 }
 
+body {
+  text-rendering: optimizeLegibility;
+}
+
 .global-loader__loading {
   /* Start fading in the loading indicator if loading indicator is still
    * displayed after 0.5s have passed. */
