@@ -3,7 +3,6 @@
 var React = require('react/addons');
 var Code = require('./code');
 require('../styles/jsx-slide.css');
-require('../thirdparty/prism/prism.css');
 
 var JsxSlide = React.createClass({
   render() {

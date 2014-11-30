@@ -2,6 +2,7 @@
 
 var React = require('react/addons');
 var Prism = require('../thirdparty/prism/prism');
+require('../thirdparty/prism/prism.css');
 
 var Code = React.createClass({
   mixins: [React.addons.PureRenderMixin],
