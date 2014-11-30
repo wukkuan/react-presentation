@@ -41,11 +41,13 @@ var App = React.createClass({
             component: TextSlide,
             props: {
               text: 'A component is a building block for your application',
+              stepThroughSubTexts: true,
               subTexts: [
                 'Possibly re-usable, but not necessarily',
                 'Everything is a component in a React application!'
               ]
-            }
+            },
+            takesFocus: true
           }, {
             component: TextSlide,
             props: {

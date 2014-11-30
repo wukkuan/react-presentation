@@ -12,7 +12,17 @@ var Slides = React.createClass({
   },
 
   componentDidMount() {
-    this.getDOMNode().focus();
+    var slide = this.props.slides[this.state.slideIndex];
+    if (!slide.takesFocus) {
+      this.getDOMNode().focus();
+    }
+  },
+
+  componentDidUpdate() {
+    var slide = this.props.slides[this.state.slideIndex];
+    if (!slide.takesFocus) {
+      this.getDOMNode().focus();
+    }
   },
 
   render() {
