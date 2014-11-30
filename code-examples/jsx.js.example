@@ -1,0 +1,10 @@
+var Hello = React.createClass({
+  render() {
+    return (
+      <div className="hello">
+        <h1>Hello World</h1>
+        <p>Hello to you, world.</p>
+      </div>
+    );
+  }
+});

@@ -1,0 +1,11 @@
+.jsx-slide__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.jsx-slide__code {
+  padding: 20px 20px !important;
+}
