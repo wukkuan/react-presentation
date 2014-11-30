@@ -33,8 +33,7 @@ var Slides = React.createClass({
 
     var cx = React.addons.classSet;
     var className = cx({
-      'slides__wrapper': true,
-      'blurred': !this.state.hasFocus
+      'slides__wrapper': true
     });
 
     return (
@@ -42,6 +41,7 @@ var Slides = React.createClass({
         className={className}
         tabIndex="0"
         onKeyUp={this.handleKeyUp}
+        onBlur={this.handleBlur}
       >
         {slideComp}
       </div>
