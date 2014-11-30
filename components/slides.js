@@ -41,17 +41,15 @@ var Slides = React.createClass({
   handleKeyUp(event) {
     var slideIndex;
 
-    if (event.altKey) {
-      if (event.keyCode === 39) {
-        slideIndex = this.state.slideIndex;
-        if (slideIndex < this.props.slides.length - 1) {
-          this.setState({ slideIndex: slideIndex + 1 });
-        }
-      } else if (event.keyCode === 37) {
-        slideIndex = this.state.slideIndex;
-        if (slideIndex > 0) {
-          this.setState({ slideIndex: slideIndex - 1 });
-        }
+    if (event.keyCode === 39) {
+      slideIndex = this.state.slideIndex;
+      if (slideIndex < this.props.slides.length - 1) {
+        this.setState({ slideIndex: slideIndex + 1 });
+      }
+    } else if (event.keyCode === 37) {
+      slideIndex = this.state.slideIndex;
+      if (slideIndex > 0) {
+        this.setState({ slideIndex: slideIndex - 1 });
       }
     }
   }
