@@ -1,5 +1,9 @@
 /** @jsx React.DOM */
 
+if (console && console.log) {
+  console.log('starting...');
+}
+
 var React = require('react/addons');
 
 var Slides = require('./slides');
