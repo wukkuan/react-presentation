@@ -9,6 +9,7 @@ var React = require('react/addons');
 var Slides = require('./slides');
 var TextSlide = require('./text-slide');
 var JsxSlide = require('./jsx-slide');
+var WrapperSlide = require('./wrapper-slide');
 
 var App = React.createClass({
   render() {
@@ -70,6 +71,9 @@ var App = React.createClass({
               text: 'Isomorphic JavaScript',
               subTexts: ['http://www.slideshare.net/rmsguhan/react-meetup-mailonreact']
             }
+          }, {
+            component: WrapperSlide,
+            props: {}
           }]
         }
       />
