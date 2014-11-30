@@ -6,9 +6,8 @@ require('../styles/text-slide.css');
 
 var TextSlide = React.createClass({
   render() {
-    var data = this.props.data;
-    var text = data.text;
-    var subTexts = data.subTexts.map(function(subText, idx) {
+    var props = this.props;
+    var text = props.text;
       return (
         <div
           className="text-slide__sub-text"

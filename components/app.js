@@ -17,13 +17,13 @@ var App = React.createClass({
         slides={
           [{
             component: TextSlide,
-            data: {
+            props: {
               text: 'React',
               subTexts: []
             }
           }, {
             component: TextSlide,
-            data: {
+            props: {
               text: 'William Blasko',
               subTexts: [
                 'Web Application Developer',
@@ -33,13 +33,13 @@ var App = React.createClass({
             }
           }, {
             component: TextSlide,
-            data: {
+            props: {
               text: 'JavaScript web app component library',
               subTexts: []
             }
           }, {
             component: TextSlide,
-            data: {
+            props: {
               text: 'A component is a building block for your application',
               subTexts: [
                 'Possibly re-usable, but not necessarily',
@@ -48,23 +48,23 @@ var App = React.createClass({
             }
           }, {
             component: TextSlide,
-            data: {
+            props: {
               text: 'Not a framework like Ember, Angular',
               subTexts: ['Just components (view layer)']
             }
           }, {
             component: JsxSlide,
-            data: {
+            props: {
             }
           }, {
             component: TextSlide,
-            data: {
+            props: {
               text: 'Each component in React has a render method that returns a JSX node',
               subTexts: []
             }
           }, {
             component: TextSlide,
-            data: {
+            props: {
               text: 'Isomorphic JavaScript',
               subTexts: ['http://www.slideshare.net/rmsguhan/react-meetup-mailonreact']
             }

@@ -18,7 +18,7 @@ var Slides = React.createClass({
   render() {
     var slide = this.props.slides[this.state.slideIndex];
     var slideComp = (
-      <slide.component data={slide.data} />
+      <slide.component {...slide.props} />
     );
 
     var cx = React.addons.classSet;
