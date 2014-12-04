@@ -12,7 +12,18 @@
   text-align: center;
 }
 
+.text-slide__sub-texts {
+  list-style-type: none;
+}
+
 .text-slide__sub-text {
   font-size: 50px;
-  text-align: center;
+  padding: 15px 0;
+  text-indent: -15px;
+}
+
+.text-slide__sub-text:before {
+  content: "-";
+  position: relative;
+  left: -15px;
 }

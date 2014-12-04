@@ -6,6 +6,7 @@ var Slides = require('./slides');
 var TextSlide = require('./text-slide');
 var JsxSlide = require('./jsx-slide');
 var WrapperSlide = require('./wrapper-slide');
+var ComponentSlide = require('./component-slide');
 
 var App = React.createClass({
   render() {
@@ -38,12 +39,13 @@ var App = React.createClass({
             component: TextSlide,
             props: {
               text: 'A component is a building block for your application',
-              stepThroughSubTexts: true,
               subTexts: [
                 'Possibly re-usable, but not necessarily',
-                'Everything is a component in a React application!'
               ]
-            },
+            }
+          }, {
+            component: ComponentSlide,
+            props: { },
             takesFocus: true
           }, {
             component: TextSlide,
@@ -53,19 +55,51 @@ var App = React.createClass({
             }
           }, {
             component: JsxSlide,
+            props: {}
+          }, {
+            component: TextSlide,
             props: {
+              text: 'Two types of data',
+              subTexts: ['properties (props)', 'state']
             }
           }, {
             component: TextSlide,
             props: {
-              text: 'Each component in React has a render method that returns a JSX node',
-              subTexts: []
+              text: 'Properties',
+              subTexts: ['Passed in when instantiating', 'Immutable']
             }
           }, {
             component: TextSlide,
             props: {
-              text: 'Isomorphic JavaScript',
-              subTexts: ['http://www.slideshare.net/rmsguhan/react-meetup-mailonreact']
+              text: 'State',
+              subTexts: ['Internal to component', 'Use conservatively']
+            }
+          }, {
+            component: TextSlide,
+            props: {
+              text: 'Stateless Component',
+              subTexts: ['Pure \'function\'', 'Wrap stateless components with stateful components']
+            }
+          }, {
+            component: TextSlide,
+            props: {
+              text: 'Virtual DOM',
+              subTexts: [
+                'React.render(<App props={data}/>, document.body)',
+                'DOM modification is expensive',
+                'Freely re-render your entire scene'
+              ]
+            }
+          }, {
+            component: TextSlide,
+            props: {
+              text: 'Isomorphic JS',
+              subTexts: [
+                'Same code to render on client or server',
+                'View page with JS disabled',
+                'See the page before the JS has loaded',
+                'Search engine crawlers'
+              ]
             }
           }, {
             component: WrapperSlide,

@@ -1,0 +1,46 @@
+.component-app-example__wrapper {
+  border: 1px solid black;
+}
+
+.component-app-example__wrapper.active{
+  border: 5px solid red;
+}
+
+.component-header-example__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.component-header-example__wrapper.active{
+  border: 5px solid red;
+}
+
+.component-login-header-example__wrapper {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.component-login-header-example__wrapper.active {
+  border: 5px solid red;
+}
+
+.component-body-example__wrapper {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.component-body-example__wrapper.active {
+  border: 5px solid red;
+}
+
+.component-footer-example__wrapper {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.component-footer-example__wrapper.active {
+  border: 5px solid red;
+}

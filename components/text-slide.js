@@ -42,12 +42,12 @@ var TextSlide = React.createClass({
 
     var subTexts = subTextsToDisplay.map(function(subText, idx) {
       return (
-        <div
+        <li
           className="text-slide__sub-text"
           key={idx}
         >
           {{subText}}
-        </div>
+        </li>
       );
     });
 
@@ -60,7 +60,9 @@ var TextSlide = React.createClass({
         <div className="text-slide__text">
           {{text}}
         </div>
-        {subTexts}
+        <ul className="text-slide__sub-texts">
+          {subTexts}
+        </ul>
       </div>
     );
   },
