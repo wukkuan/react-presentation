@@ -7,11 +7,5 @@
 
   outline: none;
   padding: 60px;
-
-  transition: opacity 0.5s;
-}
-
-.slides__wrapper.blurred {
-  opacity: 0.9;
 }
 
