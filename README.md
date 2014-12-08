@@ -2,6 +2,10 @@
 
 [React](http://facebook.github.io/react/) presentation originally given 2014-12-03 for the [Asheville Coder's League](http://avlcoders.org/). Introduces some of the concepts of React and why it may be useful.
 
+## Viewing online
+
+[http://react-presentation.divshot.io/](http://react-presentation.divshot.io/)
+
 ## Installing dependencies
 
 Clone and run `npm install` (you'll need to have [Node.js](https://nodejs.org/) installed). This will install build and browser dependencies.
